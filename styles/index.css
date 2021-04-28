@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import "reset.css";
+@import "hero.css";
+:root {
+	--blue-900: #2c7bca;
+	--blue-800: #2f8be6; /*button bg*/
+	--blue-100: #dae1e7; /*main bg*/
+
+	--grey-900: #86919d; /*hero button 2 bg*/
+	--grey-800: #dae1e7; /*tabs*/
+	--grey-700: #f1f5f8;
+
+	--dark-900: #21272c; /*footer bg and h1*/
+
+	--light-900: #fff;
+	--light-800: #c0c0c0; /*secondary hero title*/
+
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+}
+
+/*main-wrapper*/
+.main-wrapper {
+	width: clamp(310px, 91vw, 1170px);
+	margin: 0 auto;
+}
+
+/* clear-fix */
+.clear::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+/*buttons*/
+.button-blue {
+	background-color: var(--blue-800);
+	color: var(--light-900);
+}
+.button-grey {
+	background-color: var(--grey-900);
+}
+.button-blue,
+.button-grey {
+	border-radius: 5px;
+}
+.button-blue:hover,
+.button-grey:hover {
+	background-color: var(--blue-900);
+	transition: 0.3s ease;
+}
+
+/*min-width*/
+body {
+	min-width: 320px;
+	min-height: 120vh;
+}
+.hide-overflow {
+	overflow: hidden;
+}
