@@ -4,6 +4,7 @@
 @import "hero.css";
 @import "products.css";
 @import "plans.css";
+@import "join.css";
 
 :root {
 	--blue-900: #2c7bca;
@@ -22,10 +23,13 @@
 	font-size: 16px;
 	color: var(--dark-900);
 	background-color: var(--grey-700);
-} /*min-width*/
+}
+
+/*min-width*/
 body {
 	min-width: 320px;
 }
+/*stop scroll when fullscreen menu is open*/
 .hide-overflow {
 	overflow: hidden;
 }

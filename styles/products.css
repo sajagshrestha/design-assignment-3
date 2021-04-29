@@ -1,5 +1,27 @@
+/*filter*/
+.filter-title {
+	margin-right: 1rem;
+	float: left;
+	color: var(--grey-900);
+}
+.filter ul {
+	display: none;
+}
+.filter-button {
+	padding: 0.6rem 4rem;
+	position: relative;
+	background-color: var(--grey-800);
+	color: var(--dark-900);
+}
+.filter-button::after {
+	content: url(../images/dropdown.png);
+	position: absolute;
+	right: 4%;
+	top: 20%;
+}
+/*products*/
 .products-section {
-	padding-top: 3rem;
+	padding-top: 1rem;
 }
 .filter {
 	max-width: 100%;
@@ -60,4 +82,19 @@
 	cursor: pointer;
 	width: 53px;
 	margin: 0 auto;
+}
+@media only screen and (min-width: 1200px) {
+	.filter-select {
+		display: none;
+	}
+	.filter ul {
+		display: block;
+	}
+	.filter li {
+		display: inline-block;
+	}
+	.tab {
+		padding: 0.5rem 1rem;
+		margin: 2rem 0.3rem;
+	}
 }

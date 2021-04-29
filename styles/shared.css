@@ -49,7 +49,18 @@ section {
 	transition: 0.3s ease;
 	color: var(--light-900);
 }
+.button-grey-dark {
+	background-color: var(--grey-800);
+	color: var(--dark--900);
+	border-radius: 5px;
+}
 
+.button-grey-dark.active,
+.button-grey-dark:hover {
+	background-color: var(--blue-800);
+	transition: 0.3s ease;
+	color: var(--light-900);
+}
 /* custom grid */
 .grid-item {
 	width: 20rem;
