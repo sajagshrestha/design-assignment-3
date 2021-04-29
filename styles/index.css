@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import "reset.css";
 @import "hero.css";
+@import "products.css";
+@import "plans.css";
 :root {
 	--blue-900: #2c7bca;
 	--blue-800: #2f8be6; /*button bg*/
-	--blue-100: #dae1e7; /*main bg*/
 
 	--grey-900: #86919d; /*hero button 2 bg*/
 	--grey-800: #dae1e7; /*tabs*/
-	--grey-700: #f1f5f8;
+	--grey-700: #f1f5f8; /*main bg*/
 
 	--dark-900: #21272c; /*footer bg and h1*/
 
@@ -17,6 +18,8 @@
 
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
+	color: var(--dark-900);
+	background-color: var(--grey-700);
 }
 
 /*main-wrapper*/
@@ -51,11 +54,29 @@
 	color: var(--light-900);
 }
 
+/* custom grid */
+.grid-item {
+	width: 20rem;
+	margin: 0 auto 2rem auto;
+}
+@media only screen and (min-width: 700px) {
+	.grid-item {
+		width: 21rem;
+		display: inline-block;
+		margin: 0 1rem 3rem 1rem;
+	}
+}
+@media only screen and (min-width: 900px) {
+	.grid-item {
+		display: inline-block;
+		margin: 0 1.5rem 3rem 1.5rem;
+	}
+}
+
 /*min-width*/
 body {
 	min-width: 320px;
 	min-height: 120vh;
-	background-color: var(--blue-100);
 }
 .hide-overflow {
 	overflow: hidden;

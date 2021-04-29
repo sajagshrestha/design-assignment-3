@@ -1,0 +1,95 @@
+.plan-section-title {
+	margin-bottom: 4rem;
+}
+.plan-section-title h1 {
+	font-size: 2.4rem;
+	font-weight: normal;
+}
+.plan-section-title p {
+	font-size: 1.4rem;
+	font-weight: normal;
+	color: var(--grey-900);
+}
+.plan-card {
+	padding: 3rem 2rem;
+	background-color: var(--light-900);
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+.plan-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.plan-section-title h1,
+.plan-section-title p,
+.plan-title p,
+.plan-subtitle p,
+.plan-price p {
+	text-align: center;
+}
+.plan-title {
+	font-size: 2rem;
+	color: var(--dark--900);
+}
+.plan-subtitle {
+	padding: 0.5rem 0;
+	font-size: 0.9rem;
+	color: var(--grey-900);
+}
+
+.plan-price {
+	padding: 1rem;
+	position: relative;
+	font-size: 3.5rem;
+	color: var(--blue-800);
+	padding-right: 4rem;
+}
+.plan-price::before {
+	content: "$";
+	font-size: 2rem;
+	position: absolute;
+	left: 16%;
+}
+.plan-price::after {
+	content: "/month";
+	font-size: 1.5rem;
+	position: absolute;
+	bottom: 25%;
+	right: 12%;
+}
+.plan-card:first-child .plan-price::before {
+	left: 22%;
+}
+.plan-card:first-child .plan-price::after {
+	right: 18%;
+}
+.plan-benifits {
+	margin-bottom: 2rem;
+}
+.plan-benifits li {
+	padding: 1rem 0;
+	border-bottom: 1px solid var(--grey-700);
+}
+.plan-benifits li::before {
+	content: ">";
+	color: var(--grey-900);
+	margin-right: 1rem;
+}
+
+.purchase-button {
+	padding: 1rem 6rem;
+}
+.recommended {
+	position: relative;
+}
+.recommended::before {
+	content: url("../images/recommended.png");
+	top: 2%;
+	left: -2%;
+	position: absolute;
+}
+@media only screen and (min-width: 1025px) {
+	.recommended {
+		transform: scale(1.05);
+	}
+}
