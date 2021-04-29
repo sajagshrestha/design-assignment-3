@@ -32,7 +32,7 @@
 }
 
 .mobile-menu {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: -200%;
 	background-color: var(--light-900);
@@ -42,7 +42,7 @@
 }
 .open {
 	top: 0;
-	right: -4vw;
+	right: -0vw;
 }
 .mobile-menu ul {
 	width: 90%;
@@ -83,6 +83,10 @@
 	content: "0";
 	font-size: 0.9rem;
 	color: var(--light-900);
+}
+.login-button,
+.menu {
+	display: none;
 }
 /* herosection */
 .hero {
@@ -152,6 +156,33 @@
 	.hamburger {
 		display: none;
 	}
+	.login-button {
+		margin-top: 2.1rem;
+		padding: 0.8rem 1.5rem;
+		font-size: 1.1rem;
+		text-transform: uppercase;
+	}
+	.login-button,
+	.menu {
+		display: block;
+		float: right;
+	}
+	.menu li {
+		float: left;
+	}
+	.menu-item {
+		margin-left: min(2vw, 2.5rem);
+		margin-top: 2.9rem;
+		font-size: 1.1rem;
+	}
+	.menu-item:hover {
+		text-decoration: underline;
+	}
+	.search-and-cart {
+		margin-right: min(2vw, 2.5rem);
+		margin-left: min(1vw, 1rem);
+	}
+
 	.hero-content-section {
 		padding: 5rem 0 10rem;
 	}
