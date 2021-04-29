@@ -137,13 +137,17 @@
 	width: 70%;
 	font-size: 1rem;
 	padding: 1.04rem;
+	color: var(--grey-900);
+}
+.search-input::placeholder {
+	color: var(--grey-900);
 }
 .search-type {
 	width: 15%;
 	float: left;
 	padding: 1rem;
 	background-color: var(--light-900);
-	border-right: 2px solid var(--grey-800);
+	border-right: 2px solid var(--grey-700);
 	color: var(--grey-900);
 	cursor: pointer;
 	border-radius: 5px 0 0 5px;

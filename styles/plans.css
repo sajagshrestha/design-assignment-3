@@ -1,15 +1,3 @@
-.plan-section-title {
-	margin-bottom: 4rem;
-}
-.plan-section-title h1 {
-	font-size: 2.4rem;
-	font-weight: normal;
-}
-.plan-section-title p {
-	font-size: 1.4rem;
-	font-weight: normal;
-	color: var(--grey-900);
-}
 .plan-card {
 	padding: 3rem 2rem;
 	background-color: var(--light-900);
@@ -57,10 +45,10 @@
 	bottom: 25%;
 	right: 12%;
 }
-.plan-card:first-child .plan-price::before {
+.single.plan-price::before {
 	left: 22%;
 }
-.plan-card:first-child .plan-price::after {
+.single.plan-price::after {
 	right: 18%;
 }
 .plan-benifits {

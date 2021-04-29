@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import "reset.css";
+@import "shared.css";
 @import "hero.css";
 @import "products.css";
 @import "plans.css";
+
 :root {
 	--blue-900: #2c7bca;
 	--blue-800: #2f8be6; /*button bg*/
@@ -20,63 +22,9 @@
 	font-size: 16px;
 	color: var(--dark-900);
 	background-color: var(--grey-700);
-}
-
-/*main-wrapper*/
-.main-wrapper {
-	width: clamp(310px, 91vw, 1170px);
-	margin: 0 auto;
-}
-
-/* clear-fix */
-.clear::after {
-	clear: both;
-	content: "";
-	display: table;
-}
-
-/*buttons*/
-.button-blue {
-	background-color: var(--blue-800);
-}
-.button-grey {
-	background-color: var(--grey-900);
-}
-.button-blue,
-.button-grey {
-	color: var(--light-900);
-	border-radius: 5px;
-}
-.button-blue:hover,
-.button-grey:hover {
-	background-color: var(--blue-900);
-	transition: 0.3s ease;
-	color: var(--light-900);
-}
-
-/* custom grid */
-.grid-item {
-	width: 20rem;
-	margin: 0 auto 2rem auto;
-}
-@media only screen and (min-width: 700px) {
-	.grid-item {
-		width: 21rem;
-		display: inline-block;
-		margin: 0 1rem 3rem 1rem;
-	}
-}
-@media only screen and (min-width: 900px) {
-	.grid-item {
-		display: inline-block;
-		margin: 0 1.5rem 3rem 1.5rem;
-	}
-}
-
-/*min-width*/
+} /*min-width*/
 body {
 	min-width: 320px;
-	min-height: 120vh;
 }
 .hide-overflow {
 	overflow: hidden;
