@@ -83,9 +83,27 @@ section {
 	width: clamp(300px, 100%, 45rem);
 	margin: 0 auto;
 }
-.signup-input {
+.input-section {
 	width: 70%;
-	padding: 1.45rem 2rem;
+	border-radius: 5px 0 0 5px;
+	float: left;
+	height: 4rem;
+	padding-left: 2.5rem;
+	background-color: var(--light-900);
+}
+.button-section {
+	cursor: pointer;
+	height: 4rem;
+	background-color: var(--blue-800);
+	width: 30%;
+	float: right;
+	border-radius: 0 5px 5px 0;
+}
+.button-section:hover {
+	background-color: var(--blue-900);
+}
+.signup-input {
+	width: 100%;
 	border: none;
 	outline: none;
 	border-radius: 5px 0 0 5px;
@@ -97,10 +115,13 @@ section {
 	font-size: 1rem;
 }
 .signup-button {
+	text-align: center;
 	font-size: 1.1rem;
-	float: right;
 	border: none;
-	width: 30%;
-	padding: 1.4rem 1rem;
-	border-radius: 0 5px 5px 0;
+	background-color: transparent;
+	color: var(--light-900);
+}
+.signup-button,
+.signup-input {
+	padding: 1.3rem 0;
 }
