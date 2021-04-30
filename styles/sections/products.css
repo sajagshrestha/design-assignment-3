@@ -14,7 +14,7 @@
 	color: var(--dark-900);
 }
 .filter-button::after {
-	content: url(../images/dropdown.png);
+	content: url(../../images/dropdown.png);
 	position: absolute;
 	right: 4%;
 	top: 20%;

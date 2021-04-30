@@ -82,18 +82,19 @@ section {
 .signup-form {
 	width: clamp(300px, 100%, 45rem);
 	margin: 0 auto;
+	height: 4rem;
 }
 .input-section {
 	width: 70%;
 	border-radius: 5px 0 0 5px;
 	float: left;
-	height: 4rem;
+	height: 100%;
 	padding-left: 2.5rem;
 	background-color: var(--light-900);
 }
 .button-section {
 	cursor: pointer;
-	height: 4rem;
+	height: 100%;
 	background-color: var(--blue-800);
 	width: 30%;
 	float: right;
