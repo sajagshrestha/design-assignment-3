@@ -1,0 +1,16 @@
+footer {
+	background-color: var(--dark-900);
+	padding: 3rem 0;
+}
+.footer-section-title {
+	color: var(--light-900);
+	font-size: 1.3rem;
+}
+.footer-section {
+	margin: 2rem 0;
+}
+.footer-section-paragraph {
+	text-align: left;
+	color: var(--grey-900);
+	margin: 1rem 0;
+}

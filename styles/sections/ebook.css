@@ -13,3 +13,8 @@
 	padding: 1rem 2rem;
 	font-size: 1.2rem;
 }
+@media only screen and (min-width: 480px) {
+	.ebook-button {
+		font-size: 1.5rem;
+	}
+}

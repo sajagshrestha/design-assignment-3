@@ -6,7 +6,8 @@
 @import "./sections/plans.css";
 @import "./sections/join.css";
 @import "./sections/ebook.css";
-:root  {
+@import "./sections/footer.css";
+:root {
 	--blue-900: #2c7bca;
 	--blue-800: #2f8be6; /*button bg*/
 
