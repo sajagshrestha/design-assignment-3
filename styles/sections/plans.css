@@ -71,7 +71,7 @@
 	position: relative;
 }
 .recommended::before {
-	content: url("../images/recommended.png");
+	content: url("../../images/recommended.png");
 	top: 2%;
 	left: -2%;
 	position: absolute;

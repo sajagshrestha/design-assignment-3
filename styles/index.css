@@ -28,7 +28,7 @@ body {
 	color: var(--dark-900);
 	background-color: var(--grey-700);
 }
-/*stop scroll when fullscreen menu is open*/
+/*stop backgorund scroll when fullscreen menu is open*/
 .hide-overflow {
 	overflow: hidden;
 }
