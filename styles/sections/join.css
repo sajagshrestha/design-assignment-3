@@ -1,0 +1,10 @@
+.join-section {
+	background-color: var(--grey-800);
+	padding: 7rem 0;
+}
+.guarantee {
+	margin-top: 0.7rem;
+	text-align: center;
+	font-size: 0.9rem;
+	color: var(--grey-900);
+}

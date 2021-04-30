@@ -1,0 +1,20 @@
+.ebook-section {
+	padding: 7rem 0 9rem 0;
+	background-color: var(--light-900);
+	margin-bottom: 0;
+}
+.ebook-section-title {
+	margin-bottom: 3.8rem;
+}
+.ebook-button-container {
+	text-align: center;
+}
+.ebook-button {
+	padding: 1rem 2rem;
+	font-size: 1.2rem;
+}
+@media only screen and (min-width: 480px) {
+	.ebook-button {
+		font-size: 1.5rem;
+	}
+}

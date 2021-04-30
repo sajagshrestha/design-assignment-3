@@ -1,14 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import "reset.css";
-@import "hero.css";
+@import "shared.css";
+@import "./sections/hero.css";
+@import "./sections/products.css";
+@import "./sections/plans.css";
+@import "./sections/join.css";
+@import "./sections/ebook.css";
+@import "./sections/footer.css";
+@import "./sections/testimonial.css";
 :root {
 	--blue-900: #2c7bca;
 	--blue-800: #2f8be6; /*button bg*/
-	--blue-100: #dae1e7; /*main bg*/
 
 	--grey-900: #86919d; /*hero button 2 bg*/
 	--grey-800: #dae1e7; /*tabs*/
-	--grey-700: #f1f5f8;
+	--grey-700: #f1f5f8; /*main bg*/
 
 	--dark-900: #21272c; /*footer bg and h1*/
 
@@ -19,40 +25,12 @@
 	font-size: 16px;
 }
 
-/*main-wrapper*/
-.main-wrapper {
-	width: clamp(310px, 91vw, 1170px);
-	margin: 0 auto;
-}
-
-/* clear-fix */
-.clear::after {
-	clear: both;
-	content: "";
-	display: table;
-}
-
-/*buttons*/
-.button-blue {
-	background-color: var(--blue-800);
-}
-.button-grey {
-	background-color: var(--grey-900);
-}
-.button-blue,
-.button-grey {
-	color: var(--light-900);
-	border-radius: 5px;
-}
-.button-blue:hover,
-.button-grey:hover {
-	background-color: var(--blue-900);
-	transition: 0.3s ease;
-	color: var(--light-900);
-}
-
-/*min-width*/
 body {
 	min-width: 320px;
-	min-height: 120vh;
+	color: var(--dark-900);
+	background-color: var(--grey-700);
+}
+/*stop backgorund scroll when fullscreen menu is open*/
+.hide-overflow {
+	overflow: hidden;
 }

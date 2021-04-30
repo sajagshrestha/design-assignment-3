@@ -1,0 +1,128 @@
+/*main-wrapper*/
+.main-wrapper {
+	width: clamp(310px, 91vw, 1170px);
+	margin: 0 auto;
+}
+
+/* clear-fix */
+.clear::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+/*section title*/
+section {
+	margin-bottom: 3rem;
+}
+.section-title {
+	margin-bottom: 2.8rem;
+}
+.section-primary-title {
+	font-size: 3rem;
+	font-weight: normal;
+}
+.section-secondary-title {
+	font-size: 1.5rem;
+	color: var(--grey-900);
+}
+.section-title h1,
+.section-title p {
+	text-align: center;
+}
+
+/*buttons*/
+.button-blue {
+	background-color: var(--blue-800);
+}
+.button-grey {
+	background-color: var(--grey-900);
+}
+.button-blue,
+.button-grey {
+	color: var(--light-900);
+	border-radius: 5px;
+}
+.button-blue:hover,
+.button-grey:hover {
+	background-color: var(--blue-900);
+	transition: 0.3s ease;
+}
+.button-grey-dark {
+	background-color: var(--grey-800);
+	color: var(--dark--900);
+	border-radius: 5px;
+}
+
+.button-grey-dark.active,
+.button-grey-dark:hover {
+	background-color: var(--blue-800);
+	transition: 0.3s ease;
+	color: var(--light-900);
+}
+/* custom grid */
+.grid-item {
+	width: 20rem;
+	margin: 0 auto 2rem auto;
+}
+@media only screen and (min-width: 700px) {
+	.grid-item {
+		width: 21rem;
+		display: inline-block;
+		margin: 0 1rem 3rem 1rem;
+	}
+}
+@media only screen and (min-width: 1025px) {
+	.grid-item {
+		display: inline-block;
+		margin: 0 1.5rem 3rem 1.5rem;
+	}
+}
+
+/*signup form*/
+.signup-form {
+	width: clamp(300px, 90%, 45rem);
+	margin: 0 auto;
+	height: 4rem;
+}
+.input-section {
+	width: 70%;
+	border-radius: 5px 0 0 5px;
+	float: left;
+	height: 100%;
+	padding-left: 2.5rem;
+	background-color: var(--light-900);
+}
+.button-section {
+	cursor: pointer;
+	height: 100%;
+	background-color: var(--blue-800);
+	width: 30%;
+	float: right;
+	border-radius: 0 5px 5px 0;
+}
+.button-section:hover {
+	background-color: var(--blue-900);
+}
+.signup-input {
+	width: 100%;
+	border: none;
+	outline: none;
+	border-radius: 5px 0 0 5px;
+	color: var(--grey-900);
+	font-size: 1rem;
+}
+.signup-input::placeholder {
+	color: var(--grey-900);
+	font-size: 1rem;
+}
+.signup-button {
+	text-align: center;
+	font-size: 1.1rem;
+	border: none;
+	background-color: transparent;
+	color: var(--light-900);
+}
+.signup-button,
+.signup-input {
+	padding: 1.3rem 0;
+}
