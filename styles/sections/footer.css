@@ -39,6 +39,17 @@ footer {
 .footer-section-body li:last-child {
 	border-bottom: none;
 }
+.copyright {
+	color: var(--grey-900);
+	margin: 1rem 0;
+}
+.links {
+	margin: 1rem;
+}
+.links li {
+	float: left;
+	padding: 1rem;
+}
 @media screen and (min-width: 480px) {
 	.footer-section {
 		float: left;
@@ -50,8 +61,16 @@ footer {
 @media screen and (min-width: 1025px) {
 	.footer-section {
 		float: left;
-		width: 14rem;
-		margin-left: 2rem;
-		margin-right: 2rem;
+		width: 17rem;
+		margin-left: 0.6rem;
+		margin-right: 0.6rem;
+	}
+	.copyright {
+		float: left;
+		font-size: 0.8rem;
+	}
+	.links {
+		margin-top: -0.5rem;
+		float: right;
 	}
 }

@@ -273,13 +273,19 @@
 	}
 	.search-type {
 		width: 12%;
+		position: relative;
+	}
+	.search-type::after {
+		content: url(../../images/dropdown.png);
+		position: absolute;
+		top: 0.8rem;
+		right: 0.4rem;
 	}
 	.search-button {
 		width: 12%;
 	}
 	.search-input {
 		width: 76%;
-		padding-left: 3rem;
 		padding: 1.03rem;
 	}
 }

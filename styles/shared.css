@@ -80,7 +80,7 @@ section {
 
 /*signup form*/
 .signup-form {
-	width: clamp(300px, 100%, 45rem);
+	width: clamp(300px, 90%, 45rem);
 	margin: 0 auto;
 	height: 4rem;
 }

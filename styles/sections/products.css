@@ -59,7 +59,7 @@
 	width: 1.5rem;
 }
 .download-and-like {
-	width: 9rem;
+	width: 10rem;
 	height: 2rem;
 	background-color: var(--grey-800);
 	border-radius: 5px;
@@ -69,6 +69,9 @@
 	left: 0.5rem;
 	opacity: 0;
 	z-index: 3;
+}
+.download-and-like span {
+	margin-left: 0.3rem;
 }
 .download {
 	float: left;
