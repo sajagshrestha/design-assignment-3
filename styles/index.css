@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import "reset.css";
 @import "shared.css";
-@import "hero.css";
-@import "products.css";
-@import "plans.css";
-@import "join.css";
+@import "./sections/hero.css";
+@import "./sections/products.css";
+@import "./sections/plans.css";
+@import "./sections/join.css";
 
 :root {
 	--blue-900: #2c7bca;
@@ -21,13 +21,12 @@
 
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
-	color: var(--dark-900);
-	background-color: var(--grey-700);
 }
 
-/*min-width*/
 body {
 	min-width: 320px;
+	color: var(--dark-900);
+	background-color: var(--grey-700);
 }
 /*stop scroll when fullscreen menu is open*/
 .hide-overflow {

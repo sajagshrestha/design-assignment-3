@@ -15,15 +15,14 @@ section {
 	margin-bottom: 3rem;
 }
 .section-title {
-	margin-bottom: 4rem;
+	margin-bottom: 2.8rem;
 }
-.section-title h1 {
+.section-primary-title {
 	font-size: 2.4rem;
 	font-weight: normal;
 }
-.section-title p {
-	font-size: 1.4rem;
-	font-weight: normal;
+.section-secondary-title {
+	font-size: 1.2rem;
 	color: var(--grey-900);
 }
 .section-title h1,
@@ -47,7 +46,6 @@ section {
 .button-grey:hover {
 	background-color: var(--blue-900);
 	transition: 0.3s ease;
-	color: var(--light-900);
 }
 .button-grey-dark {
 	background-color: var(--grey-800);
@@ -78,4 +76,31 @@ section {
 		display: inline-block;
 		margin: 0 1.5rem 3rem 1.5rem;
 	}
+}
+
+/*signup form*/
+.signup-form {
+	width: clamp(300px, 100%, 45rem);
+	margin: 0 auto;
+}
+.signup-input {
+	width: 70%;
+	padding: 1.5rem 2rem;
+	border: none;
+	outline: none;
+	border-radius: 5px 0 0 5px;
+	color: var(--grey-900);
+	font-size: 1rem;
+}
+.signup-input::placeholder {
+	color: var(--grey-900);
+	font-size: 1rem;
+}
+.signup-button {
+	font-size: 1.1rem;
+	float: right;
+	border: none;
+	width: 30%;
+	padding: 1.4rem 1rem;
+	border-radius: 0 5px 5px 0;
 }
